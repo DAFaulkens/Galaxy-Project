@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    background-image:url(./images/backgroundimage2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    padding-right:36% ;
+}
+.logo > img{
+    height: 100px;
+    width: 140px;
+}
+.links > ul > li{
+    display: inline-block;
+    padding: 20px 40px 20px 40px;
+}
+.links > ul > li > a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    transition: .2s;
+    font-weight: 500;
+    font-size: 20px;
+}
+#active{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
+.links > ul > li > a:hover{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 4px;
+    transition: .2s;
+    background-color: rgb(190, 136, 136);
+}
