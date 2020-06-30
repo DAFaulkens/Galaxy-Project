@@ -1,13 +1,42 @@
 body{
     margin: 0;
     padding: 0;
+    color: rgb(110, 180, 110);
+}
+.container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 125vh;
+    animation: animate 30s ease-in-out infinite;
+    background-size: cover;
+}
+.outer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 125vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+@keyframes animate{
+    0%, 100%{
+        background-image: url(./images/background7.jpg);
+    }
+    25%{
+        background-image: url(./images/background8.jpg);
+    }
+    50%{
+        background-image: url(./images/background13.jpg);
+    }
+    75%{
+        background-image: url(./images/background14.jpg);
+    }
 }
 .navbar{
     display: flex;
-    background-image:url(./images/backgroundimage2.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    font-family: sans-serif;
 }
 .logo{
     padding-right:36% ;
@@ -18,25 +47,78 @@ body{
 }
 .links > ul > li{
     display: inline-block;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px 20px 30px;
 }
 .links > ul > li > a{
     text-decoration: none;
-    font-family: sans-serif;
-    color: black;
+    color: rgb(110, 180, 110);
     transition: .2s;
     font-weight: 500;
     font-size: 20px;
 }
 #active{
-    border: 1px solid black;
+    border: 2px solid rgb(110, 180, 110);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .links > ul > li > a:hover{
     border: 1px solid black;
     padding: 15px;
     border-radius: 4px;
     transition: .2s;
-    background-color: rgb(190, 136, 136);
+    background-color: rgb(69, 209, 252);
+    color: red;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    font-family: sans-serif;
+    
+}
+.header3{
+    font-size: larger;
+    padding-left: 100px;
+}
+.header2{
+    padding-left: 150px;
+    font-size: x-large;
+}
+.header1{
+    text-align: center;
+    font-size: xx-large;
+    transform: scale(.9, 2);
+    text-shadow: 2px 2px 2px rgb(180, 180, 180);
+    color: rgb(69, 209, 252);
+}
+.header4{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.header4 > h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.header4 > h3 > a{
+    border: 2px solid rgb(180, 180, 180);
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: rgb(69, 209, 252);
+    transition: .3s;
+}
+.header4 > h3 > a:hover{
+    color: whitesmoke;
+    background-color: rgb(34, 171, 212);
+    transition: .3s;
+}
+#paragraph{
+    font-size: 25px;
+    padding: 10px;
+}
+#paragraph > span > a{
+    color: rgb(69, 209, 252);
+}
+#paragraph > span > a:hover{
+    color: rgb(185, 185, 185);
 }
