@@ -1,45 +1,109 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    color: rgb(110, 180, 110);
+    box-sizing: border-box;
 }
-.container{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 125vh;
-    animation: animate 30s ease-in-out infinite;
-    background-size: cover;
+body{
+    background-color: black;
 }
-.outer{
-    position: absolute;
-    left: 0;
-    top: 0;
+.slideshow{
     width: 100%;
-    height: 125vh;
-    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow-details{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    animation: animate 41s infinite;
+}
+
+.slideshow-details img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: zoom 41s infinite;
+}
+.slideshow-details:nth-child(1),
+.slideshow-details:nth-child(1) img{
+    animation-delay: 0s;
+}
+.slideshow-details:nth-child(2),
+.slideshow-details:nth-child(2) img{
+    animation-delay: 10s;
+}
+.slideshow-details:nth-child(3),
+.slideshow-details:nth-child(3) img{
+    animation-delay: 20s;
+}
+.slideshow-details:nth-child(4),
+.slideshow-details:nth-child(4) img{
+    animation-delay: 30s;
+}
+.slideshow-text{
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-align: center;
+    color:  whitesmoke;
+    background-color: rgba(0, 0, 0, .8);
+    transform: translateY(-50%);
+    padding: 40px 0 40px 0;
+}
+.slideshow-details h2{
+    font-size: 3rem;
+    transform: scale(.9, 2);
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(53, 50, 50, .8);
+}
+.slideshow-details h3{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+    font-family: 'Sail', cursive;
+    letter-spacing: 3px;
+    color: rgb(218, 98, 0);
+}
+.slideshow-details p a{
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(14, 117, 177, 0.8);
+    color: whitesmoke;
+    font-weight: 600;
+    transition: .2s;
 }
 @keyframes animate{
-    0%, 100%{
-        background-image: url(./images/background7.jpg);
-    }
     25%{
-        background-image: url(./images/background8.jpg);
+        opacity: 1;
     }
-    50%{
-        background-image: url(./images/background13.jpg);
+    40%{
+        opacity: 0;
     }
-    75%{
-        background-image: url(./images/background14.jpg);
+}
+@keyframes zoom{
+    100%{
+        transform: scale(1.5);
     }
 }
 .navbar{
     display: flex;
     font-family: sans-serif;
+    background-color: rgba(0, 0, 0, .8);
 }
 .logo{
-    padding-right:36% ;
+    padding-right:34% ;
+    display: flex;
+    flex-direction: row;
 }
 .logo > img{
     height: 100px;
@@ -47,17 +111,17 @@ body{
 }
 .links > ul > li{
     display: inline-block;
-    padding: 20px 40px 20px 30px;
+    padding: 30px 30px 15px 20px;
 }
 .links > ul > li > a{
     text-decoration: none;
-    color: rgb(110, 180, 110);
+    color: white;
     transition: .2s;
     font-weight: 500;
     font-size: 20px;
 }
 #active{
-    border: 2px solid rgb(110, 180, 110);
+    border: 2px solid white;
     padding: 15px;
     border-radius: 10px;
 }
@@ -66,59 +130,32 @@ body{
     padding: 15px;
     border-radius: 4px;
     transition: .2s;
-    background-color: rgb(69, 209, 252);
-    color: red;
+    background-color: white;
+    color: black;
+}
+#login{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(218, 98, 0);
 }
 .container2{
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 100px;
     font-family: sans-serif;
+    text-align: center;
     
 }
-.header3{
-    font-size: larger;
-    padding-left: 100px;
-}
-.header2{
-    padding-left: 150px;
-    font-size: x-large;
-}
 .header1{
-    text-align: center;
     font-size: xx-large;
-    transform: scale(.9, 2);
+    transform: scale(.9, 1.5);
     text-shadow: 2px 2px 2px rgb(180, 180, 180);
-    color: rgb(69, 209, 252);
-}
-.header4{
-    text-align: center;
-    padding-bottom: 50px;
-}
-.header4 > h3{
-    font-size: 30px;
-    padding-bottom: 10px;
-}
-.header4 > h3 > a{
-    border: 2px solid rgb(180, 180, 180);
-    padding: 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    color: rgb(69, 209, 252);
-    transition: .3s;
-}
-.header4 > h3 > a:hover{
     color: whitesmoke;
-    background-color: rgb(34, 171, 212);
-    transition: .3s;
 }
-#paragraph{
-    font-size: 25px;
-    padding: 10px;
-}
-#paragraph > span > a{
-    color: rgb(69, 209, 252);
-}
-#paragraph > span > a:hover{
-    color: rgb(185, 185, 185);
+.signup a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 20px;
+    color: whitesmoke;
 }
