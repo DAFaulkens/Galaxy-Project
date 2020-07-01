@@ -1,45 +1,208 @@
-<!Doctype>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galaxy-Project</title>
-    <link href="./H.css" type="text/css" rel="stylesheet">
+    <title>Galaxy Real Estate</title>
+    <link href="H.css" type="text/css" rel="stylesheet">
 </head>
-
-    
-        <nav class="navbar">
+<body>
+     <nav class="navbar">
             <div class="logo">
-                <img src="./image25.jpeg" alt="Galaxy Company Logo">
+                <img src="./image30.jpeg" width=100  alt="Galaxy Company Logo">
             </div>
-            <div class="links">
+                <div class="links">
                 <ul>
                     <li> <a id="active" href="#home"> Home </a> </li>
                     <li> <a href="#houses"> Houses </a> </li>
                     <li> <a href="#about"> About </a> </li>
                     <li> <a href="#contact"> Contact </a> </li>
                 </ul>
-                
-    
-    
-     <body>       
-            
-      <div id="slide-container">
-        <span id='slider-image-1'>
-            <span id="slider-image-2">
-                <span id="slider-image-3">
-    <div id="images-container">
-    <img src="./download.jpeg" class="slider-image">
-    <img src="./images.jpeg" class="slider-image">
-    <img src="./images (2).jpeg" class="slider-image">
-    </div>
-    <div class="button-container">
-        <a href="slider-image-1" class="slider-button"></a>
-         <a href="slider-image-2" class="slider-button"></a>
-         <a href="slider-image-3" class="slider-button"></a>
-    </div>
+            </div>
 
+        </nav>
+        
+        <div class="slideshow-container">
+     <div class="mySlides fade">
+         <div id=slide></div>
+            <div class="numbertext">1 / 3</div>
+            <img src="./imagefront1.jpeg" style="width:75%" height=50%>
+            <div class="text">BIENVENUE</div>
+          </div>
+        
+          <div class="mySlides fade">
+              <div id="slide"></div>
+            <div class="numbertext">2 / 3</div>
+            <img src="./imagefront2.jpeg" style="width:75%" height=50%>
+            <div class="text">BIENVENUE</div>
+          </div>
+          <div class="mySlides fade">
+              <div id="slide"></div>
+            <div class="numbertext">3 / 4</div>
+            <img src="imagefront3.jpeg" style="width:75%" height=50%>
+            <div class="text">BIENVENUE</div>
+          </div>
+          <div class="mySlides fade">
+              <div id="slide"></div>
+            <div class="numbertext">4/ 5</div>
+            <img src="imagefront4.jpeg" style="width:75%" height=50%>
+            <div class="text">BIENVENUE</div>
+          </div>
+          <div class="mySlides fade">
+              <div id="slide"></div>
+            <div class="numbertext">5 / 5</div>
+            <img src="imagefront5.jpeg" style="width:75%" height=50%>
+            <div class="text">BIENVENUE</div>
+          </div>
+         <script> var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+        
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+          <script>
+              var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); 
+}
+          </script>
+          </body>
+    <body>
+        <h1>Get to live like a royalty in our serene homes!</h1> 
+        <h2>SIMBA REAL ESTATE FIRM</h2>
+        <div class="container">
+            <img src="imagespic1.pjpeg" alt="Norway" style="width:50%;" height:20>
+            <div class="text-block">
+              <h4>PRICE:16,700,000</h4>
+              <p>LOCATION:Kilimani,Kenya</p>
+            </div>
+          </div> 
+         <ul>
+           <li><img src="imagespic2jpeg" width=80% height=20%></li>
+            <li><img src="imagespic3.jpeg" width=80% height=20%></li>
+                <li><img src="imagespic4.jpeg" width=80% height=20%></li>
+        </ul>
+   <div>
     
-</body>
+       <p>
+     DESCRIPTION:  4-bedroom mansions with spacious rooms.A cozy roof-top
+    balcony that allows you towatch the beautiful sunrise and sunset and
+   feel the freshness of nature.Has cctv cameras at the front and back doors.
+ </p></div>
+ <div class="container">
+    <img src="photo1.jpeg" alt="Norway" style="width:50%;" height:20>
+    <div class="text-block">
+      <h4>PRICE:20,700,000</h4>
+      <p>LOCATION:Kilimani,Kenya</p>
+    </div>
+  </div> 
+<div id="images">
+<ul>
+    <li><img src="photo2.jpeg" ></li>
+        <li><img src="photo3.jpeg" ></li>
+</ul>
+</div>
+ <h3>OGOPA REAL ESTATE FIRM</h3>
+ <P>
+           Nice ,lavish apartments for rental during vacation or when you need 
+          a new space.There are also furnished aprtments to give you a 
+          comfortable experience.
+     <div class="slide">     
+              
+ <div class="container">
+            <img src="apartment1.jpeg" alt="Norway" style="width:50%;" height:20>
+            <div class="text-block1">
+              <h4>PRICE:40,000pm</h4>
+              <p>LOCATION:Runda,Kenya</p>
+     </div>
+     
+ <div class="container">
+                <img src="aprt2.jpeg" alt="Norway" style="width:50%;" height:20>
+                <div class="text-block2">
+                  <h4>PRICE:30.000</h4>
+                  <p>LOCATION:Kilimani,Kenya</p>
+      </div>
+      
+ <div class="container">
+    <img src="aprtment3.jpeg" alt="Norway" style="width:50%;" height:20>
+                    <div class="text-block3">
+                      <h4>PRICE:30,000pm</h4>
+                      <p>LOCATION:Ruiru,Kenya</p>
+     </div>
+     
+<div class="container">
+                        <img src="aprtment4.jpeg" alt="Norway" style="width:50%;" height:20>
+                        <div class="text-block4">
+                          <h4>PRICE:35,000pm</h4>
+                          <p>LOCATION:Westlands,Kenya</p>
+     </div>
+     
+     
+      
+    <div class="container">
+                        <img src="apartment6" alt="Norway" style="width:50%;" height:20>
+                        <div class="text-block5">
+                          <h4>PRICE:45,000pm</h4>
+                          <p>LOCATION:Kitisuru,Kenya</p>
+     </div>
+    
+     <div class="container">
+                        <img src="apartment7" alt="Norway" style="width:50%;" height:20>
+                        <div class="text-block6">
+                          <h4>PRICE:38,000pm</h4>
+                          <p>LOCATION:Westlands,Kenya</p>
+     </div>
+     
+     <div class="container">
+                        <img src="apartment8" alt="Norway" style="width:50%;" height:20>
+                        <div class="text-block6">
+                          <h4>PRICE:34,000pm</h4>
+                          <p>LOCATION:Hurlingham,Kenya</p>
+     </div>
+     
+     <div class="container">
+                        <img src="aprtment9" alt="Norway" style="width:50%;" height:20>
+                        <div class="text-block7">
+                          <h4>PRICE:35,000pm</h4>
+                          <p>LOCATION:Kilimani,Kenya</p>
+     </div>
+     </div>
+                          
+    </body>
+
 </html>
+    
+            
