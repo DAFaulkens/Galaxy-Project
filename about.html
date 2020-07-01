@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./about.img/COMON.jpeg" alt="Galaxy Company Logo">
+            </div>
+            <div class="links">
+                <ul>
+                    <li> <a id="active" href="#home"> Home </a> </li>
+                    <li> <a href="#houses"> Houses </a> </li>
+                    <li> <a href="#about"> About </a> </li>
+                    <li> <a href="#contact"> Contact </a> </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="pits">
+        <div class="slide" style="max-width:500px" >
+            <img class="mySlides" src="./about.img/pppppppppp.jpg" height="400px" width="900px">
+            <img class="mySlides" src="./about.img/44.jpeg" height="400px" width="900px">
+            <img class="mySlides" src="./about.img/shutterstock_729856273_RETOUCHED.HL-bg.jpg" height="400px" width="900px">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000);
+            }
+            </script>
+        <div class="about">
+            <h1>ABOUT US</h1>
+            <P>The <b>Galaxy Real Estate</b> Kenya office opened for trading in January 2012 with the Head Office at Fortis Tower in Westlands, Nairobi; with a second office opening at The Hub, Karen in February 2016. Galaxy real estate Kenya offers specializsd real estate services in the residential and commercial fields – covering both <em>sales and rentals</em>, with a <em>Managed Lease division</em> provides landlords with hassle free management of their properties.</P>
+            <p>Our values are founded on a unique recipe for success that has been achieved since the company was founded by our Life President Galaxy in 1976. It is these principles that serve as a guiding compass for the organisation as a whole and a true north for each individual who carries and represents the Galaxy Real Estates brand. The practice of these standards has governed who we are and how we conduct our business.</p>
+            <p>Our current staff of 70 professionals and counting is the very heart and soul of our business. Our team of agents, who represent the major suburbs in Nairobi, has allowed them to become area specialists and a household name in their areas of residence and operation.  The Galaxy Real Estate Kenya team is led by a diverse and seasoned management team, with each of us possessing extensive experience in real estate both from within and internationally. Galaxy real estate Kenya endeavours to maintain the highest levels of professional service with unquestionable integrity and reliability while continually assessing the changing needs of the Kenyan market place.</p>
+            <p>With the company’s goal being, first and foremost, to provide a profitable and positive real estate experience for all clients. Galaxy real estate works each day to ensure the client comes first while a timely service is provided that meets or exceeds all expectations.</p>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info1">
+            <p id="page">Who we are</p>
+            <p>Galaxy Real Estate is a Kenyan based Real Estate company that offers benchmark customer service, negotiation and marketing skills in Rental ,Sales and property management to sellers, buyers, landlords, and tenants within Kenya .</p>
+        </div>
+        <div class="info2">
+            <p id="page">Contact Us</p>
+            <p>Westlands Commercial Center, Block B4, Suite 1</p>
+            <p>Phone: +254 711 000000, +254 700 000000</p>
+            <p>info@galaxyrealestateske.com</p>
+            <p>galaxyrealestateske@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>

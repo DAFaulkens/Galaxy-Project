@@ -1,33 +1,37 @@
 body{
     margin: 0;
     padding: 0;
+    background-image:url("images50.jpeg");
+    text-decoration-color: white;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
 }
 .navbar{
     display: flex;
-    background-image:url("./image26.jpeg");
+    background-color:black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height:15%;
     width:100%;
     }
-
-
-.logo{
+    .logo{
     padding-right:36% ;
+
 }
 .logo > img{
     height: 100px;
     width: 140px;
 }
 .links > ul > li{
-    display: inline-block;
+    display:inline-block;
     padding: 20px 40px 20px 40px;
 }
 .links > ul > li > a{
     text-decoration: none;
     font-family: sans-serif;
-    color: black;
+    color: rgb(110,180,110);
     transition: .2s;
     font-weight: 500;
     font-size: 20px;
@@ -44,74 +48,149 @@ body{
     padding: 15px;
     border-radius: 4px;
     transition: .2s;
-    background-color: rgb(190, 136, 136);
+    background-color:rgb(93, 170, 233);
 }
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  #slide {
+      width:70%;
+      height:70%;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .text {
+    color: limegreen;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: initial;
+    bottom: 8px;
+    width: 100%;
+    text-align: top;
+  }
+  
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .mySlides {
+    display: none;
+  }
+  prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#slide-container {
-    width:800px;
-    height :600px;
-    margin-left:auto;
-    margin-right:auto;
-    overflow :hidden;
-    text-align:center;
-}
-#image-container {
-    width:2400px;
-    height:600px;
+.container {
     position:relative;
-    transition:left 2s;
-    -moz-transition: left 2s;
 }
-.slider-image {
-    float:left;
-    margin:0px;
+#slide {
+  float:right;
+  width:50%;
+  height:20%;
+  display:flex;
 }
-.button-container {
-    positon:relative;
-    top:-20px;
+#active {
+  float:right;
+  width:50%;
+  height:20%;
+  display:flex;
+  position:top;
 }
-#slider-button {
-    display:inline-block;
-    width:10px;
-    height:10px;
-    border-radius:5px;
-    background-color:purple;
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    float:right;
+  }
+  
+  
+.comments {
+  border: 2px solid #ccc;
+  background-color:grey;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px 0;
+  text-align:left;
 }
-#slider-image-1:target  ~image-container{
-    left:0px;
+
+.comments::after {
+  content: "";
+  clear: both;
+  display: table;
+  width:1px;
+  height:1px;
 }
-#slider-image-2:target ~image-container {
-    left:-800px;
+.comments img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  
 }
-#slider-image-3 ~ image-container {
-    left:-600px;
+
+#Avatar {
+    width:100px;
+    height:100px;
+    
 }
+  
