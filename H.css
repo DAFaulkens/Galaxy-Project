@@ -136,23 +136,23 @@ body{
     from {opacity: .4}
     to {opacity: 1}
   }
-  
-  li {
-    float:right;
-    overflow:hidden;
-    margin:0 auto;
-    padding:0;
-    flex-wrap;
-    }
-p {
-    float:top;
-    position:right;
-}
+
 .container {
-    position: relative;
-    }
-  
-  
+    position:relative;
+}
+#slide {
+  float:right;
+  width:50%;
+  height:20%;
+  display:flex;
+}
+#active {
+  float:right;
+  width:50%;
+  height:20%;
+  display:flex;
+  position:top;
+}
   .text-block {
     position: absolute;
     bottom: 20px;
@@ -161,23 +161,36 @@ p {
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    float:right;
   }
-  #images {
-      width:20px;
-      height:20px;
-  }
-  #active {
-      float:right;
-      position:top;
-      
-  }
-  .slide {
-      margin:5px;
-      padding-left:20px;
-      padding-right:20px;
-      display:flex;
-      flex-direction:row;
-      flex-wrap:wrap;
-  }
+  
+  
+.comments {
+  border: 2px solid #ccc;
+  background-color:grey;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px 0;
+  text-align:left;
+}
 
+.comments::after {
+  content: "";
+  clear: both;
+  display: table;
+  width:1px;
+  height:1px;
+}
+.comments img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  
+}
+
+#Avatar {
+    width:100px;
+    height:100px;
+    
+}
   
