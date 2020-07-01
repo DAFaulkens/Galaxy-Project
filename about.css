@@ -1,7 +1,7 @@
 h1 {
     font-family: 'Bree Serif', serif;
     padding-left: 10px;
-    color: rgb(48, 68, 182);
+    color: rgb(218, 98, 0);
 }
 .slide {
     margin-top: 10px;
@@ -9,20 +9,23 @@ h1 {
 }
 
 .about {
-    margin: 0 30 0 20;
-    padding-left: 40px;
-    padding-right: 10px;
-    width: 70%;
+    margin: 0 30 0 300;
+    padding: 40px;
+    /* width: 70%; */
+    /* align-items: center; */
+    text-align: center;
+    color: white;
 }
 
-img {
+/* img {
     opacity: 60%;
-}
+} */
 
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(168, 155, 135);
+    background-image: url('./about.img/WhatsApp\ Image\ 2020-06-30\ at\ 9.50.51\ AM\ \(1\).jpeg');
+    background-size: cover;
 }
 .navbar{
     display: flex;
@@ -69,20 +72,54 @@ body{
     padding-left: 80px;
     border-top: groove;
     display: flex;
-    flex: 3;
-}
-.info1 {
-    width: 50%;
+    /* flex: 2; */
     justify-content: space-between;
-    margin-right: 10px;
+    
+    width: 100%;
     
 }
-
-/* .info2 {
-    padding-top: 2px;
-    padding-bottom: 2px;
-} */
+.info1 {
+    width: 1000px;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+}
 #page {
     font-size: 24px;
     font-weight: bold;
+}
+.info > info1 {
+    background-color: #f1f1f1;
+    width: 10px;
+    margin: 10px;
+    line-height: 75px;
+}
+.footer-icon {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-icon ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+.footer-icon ul li {
+    font-display: inline-block;
+    width: 30px;
+    margin: 0px 20px;
+    border-radius: 100px;
+    background-color: #32cd32;
+
+}
+.footer-icon ul li a {
+    color: #272727;
+    font-size: 20px;
+    display: block;
+    margin: 10px;
+}
+.footer-icon ul li a i {
+    line-height: 30px;
 }
