@@ -4,7 +4,8 @@ body{
     background-image:url("images50.jpeg");
     text-decoration-color: white;
     background-size:cover;
-    background-repeat: no-repeat;
+    
+    
     
 }
 .navbar{
@@ -136,42 +137,51 @@ body{
     from {opacity: .4}
     to {opacity: 1}
   }
-
-.container {
-    position:relative;
-}
-#slide {
-  float:right;
-  width:50%;
-  height:20%;
-  display:flex;
-}
-#active {
-  float:right;
-  width:50%;
-  height:20%;
-  display:flex;
-  position:top;
-}
-  .text-block {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+  
+  .ogopa {
     float:right;
-  }
-  
-  
+    position:top;
+    width:50%;
+    height:50%;
+    border-top:0;
+    display:column;
+}
+.step-up{
+  float:right;
+  position:top;
+  width:50%;
+  height:50%;
+  border-top:0;
+}
+.empire {
+  float:right;
+  position:top;
+  width:50%;
+  height:50%;
+  border-top:0;
+}
+.simba {
+  float:right;
+  position:top;
+  width:50%;
+  height:50%;
+  border-top:0;
+}
+.power{
+  float:right;
+  position:top;
+  width:50%;
+  height:50%;
+  border-top:0;
+}
 .comments {
   border: 2px solid #ccc;
-  background-color:grey;
+  background-color:white;
   border-radius: 0px;
   padding: 0px;
   margin: 0px 0;
   text-align:left;
+  border-top:5px;
 }
 
 .comments::after {
@@ -193,4 +203,3 @@ body{
     height:100px;
     
 }
-  
