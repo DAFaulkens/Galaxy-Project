@@ -1,0 +1,88 @@
+h1 {
+    font-family: 'Bree Serif', serif;
+    padding-left: 10px;
+    color: rgb(48, 68, 182);
+}
+.slide {
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.about {
+    margin: 0 30 0 20;
+    padding-left: 40px;
+    padding-right: 10px;
+    width: 70%;
+}
+
+img {
+    opacity: 60%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(168, 155, 135);
+}
+.navbar{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    background-color: black;
+    color: rgb(110, 180, 110);
+}
+.logo{
+    padding-right:36% ;
+}
+.logo > img{
+    height: 100px;
+    width: 140px;
+}
+.links > ul > li{
+    display: inline-block;
+    padding: 20px 30px 20px 30px;
+}
+.links > ul > li > a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(110, 180, 110);;
+    transition: .2s;
+    font-weight: 500;
+    font-size: 20px;
+}
+#active{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
+.links > ul > li > a:hover{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 4px;
+    transition: .2s;
+    background-color: rgb(93, 170, 233);;
+    color: black;
+}
+.info {
+    background-color: rgb(132, 168, 132);
+    padding-left: 80px;
+    border-top: groove;
+    display: flex;
+    flex: 3;
+}
+.info1 {
+    width: 50%;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
+
+/* .info2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+} */
+#page {
+    font-size: 24px;
+    font-weight: bold;
+}
