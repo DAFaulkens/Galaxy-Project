@@ -1,13 +1,8 @@
 h1 {
     font-family: 'Bree Serif', serif;
-<<<<<<< HEAD
     padding-bottom: 20px;
     color: rgb(218, 98, 0);
     text-decoration: underline;
-=======
-    padding-left: 10px;
-    color: rgb(218, 98, 0);
->>>>>>> 7e0271e1164ef3079073081d3de4f730f58bbe83
 }
 .slide {
     margin-top: 10px;
@@ -15,12 +10,15 @@ h1 {
 }
 
 .about {
-<<<<<<< HEAD
     margin: 0 30 0 20;
     padding: 40px;
     text-align: center;
     font-weight: 400;
     font-size: 18px;
+}
+h3 {
+    color: rgb(173, 64, 0);
+    font-size: 24px;
 }
 body{
     padding: 0;
@@ -28,25 +26,6 @@ body{
     background-image: url(./about.img/WhatsApp\ Image\ 2020-06-30\ at\ 9.50.51\ AM\ \(1\).jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-=======
-    margin: 0 30 0 300;
-    padding: 40px;
-    /* width: 70%; */
-    /* align-items: center; */
-    text-align: center;
-    color: white;
-}
-
-/* img {
-    opacity: 60%;
-} */
-
-body{
-    padding: 0;
-    margin: 0;
-    background-image: url('./about.img/WhatsApp\ Image\ 2020-06-30\ at\ 9.50.51\ AM\ \(1\).jpeg');
-    background-size: cover;
->>>>>>> 7e0271e1164ef3079073081d3de4f730f58bbe83
 }
 .navbar{
     display: flex;
@@ -86,31 +65,34 @@ body{
     background-color: white;
     color: black;
 }
-#login{
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(218, 98, 0);
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .main-content{
-    margin-top:30px;
+    margin-top:250px;
 }
 footer{
 position: relative;
 bottom: 0px;
 width:100%;
 background: #111;
+/* height: 20px; */
+margin-top: 100px;
+
 }
 *{
     margin:0;
     padding:0;
-    color:whitesmoke;
+    color:white;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
 .main-content{
     display: flex;
-<<<<<<< HEAD
 
 }
 .main-content .box{
@@ -258,56 +240,4 @@ margin: 20px 0 0 0;
     .box .content .box{
         margin: 5px 0;
     }
-=======
-    /* flex: 2; */
-    justify-content: space-between;
-    
-    width: 100%;
-    
-}
-.info1 {
-    width: 1000px;
-    justify-content: space-between;
-    margin-right: 10px;
-    align-items: center;
-}
-#page {
-    font-size: 24px;
-    font-weight: bold;
-}
-.info > info1 {
-    background-color: #f1f1f1;
-    width: 10px;
-    margin: 10px;
-    line-height: 75px;
-}
-.footer-icon {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-.footer-icon ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-}
-.footer-icon ul li {
-    font-display: inline-block;
-    width: 30px;
-    margin: 0px 20px;
-    border-radius: 100px;
-    background-color: #32cd32;
-
-}
-.footer-icon ul li a {
-    color: #272727;
-    font-size: 20px;
-    display: block;
-    margin: 10px;
-}
-.footer-icon ul li a i {
-    line-height: 30px;
->>>>>>> 7e0271e1164ef3079073081d3de4f730f58bbe83
 }
