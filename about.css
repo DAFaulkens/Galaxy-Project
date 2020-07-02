@@ -1,7 +1,8 @@
 h1 {
     font-family: 'Bree Serif', serif;
-    padding-left: 10px;
+    padding-bottom: 20px;
     color: rgb(218, 98, 0);
+    text-decoration: underline;
 }
 .slide {
     margin-top: 10px;
@@ -9,34 +10,28 @@ h1 {
 }
 
 .about {
-    margin: 0 30 0 300;
+    margin: 0 30 0 20;
     padding: 40px;
-    /* width: 70%; */
-    /* align-items: center; */
     text-align: center;
-    color: white;
+    font-weight: 400;
+    font-size: 18px;
 }
-
-/* img {
-    opacity: 60%;
-} */
-
 body{
     padding: 0;
     margin: 0;
-    background-image: url('./about.img/WhatsApp\ Image\ 2020-06-30\ at\ 9.50.51\ AM\ \(1\).jpeg');
+    background-image: url(./about.img/WhatsApp\ Image\ 2020-06-30\ at\ 9.50.51\ AM\ \(1\).jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .navbar{
     display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: initial;
-    background-color: black;
-    color: rgb(110, 180, 110);
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, .8);
 }
 .logo{
-    padding-right:36% ;
+    padding-right:32% ;
+    display: flex;
+    flex-direction: row;
 }
 .logo > img{
     height: 100px;
@@ -44,27 +39,26 @@ body{
 }
 .links > ul > li{
     display: inline-block;
-    padding: 20px 30px 20px 30px;
+    padding: 30px 30px 15px 20px;
 }
 .links > ul > li > a{
     text-decoration: none;
-    font-family: sans-serif;
-    color: rgb(110, 180, 110);;
+    color: white;
     transition: .2s;
     font-weight: 500;
     font-size: 20px;
 }
 #active{
-    border: 1px solid black;
+    border: 2px solid white;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .links > ul > li > a:hover{
     border: 1px solid black;
     padding: 15px;
     border-radius: 4px;
     transition: .2s;
-    background-color: rgb(93, 170, 233);;
+    background-color: white;
     color: black;
 }
 
@@ -73,16 +67,19 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.galaxy {
-    flex-direction: column;
-}
-h3 {
-    color: rgb(173, 69, 0);
-    font-size: 23px;
-    font-weight: bold;
-}
 
+.main-content{
+    margin-top:250px;
+}
+footer{
+position: relative;
+bottom: 0px;
+width:100%;
+background: #111;
+/* height: 20px; */
+margin-top: 100px;
 
+}
 *{
     margin:0;
     padding:0;
@@ -92,7 +89,6 @@ h3 {
 }
 .main-content{
     display: flex;
-    background-color: rgb(32, 30, 30);
 
 }
 .main-content .box{
