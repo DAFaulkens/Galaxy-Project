@@ -1,9 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-image:url("images50.jpeg");
-   text-decoration-color: black;
+    background-image:url("./Galaxy-Project/H.img/bg.jpeg");
+    text-decoration-color: black;
     background-size: cover ;
+    font-weight:10px;
 }
   .navbar{
   display: flex;
@@ -124,17 +125,10 @@ body{
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+    
   }
   
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
   
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
   h1 {
     text-decoration: lime;
     padding-bottom: 5px;
@@ -177,13 +171,15 @@ body{
 }
 .comments {
   border: 2px solid #ccc;
-  background-color:white;
+  background-color:grey;
   border-radius: 0px;
    padding-top: 5px;
   margin: 5px 5px;
   text-align:left;
   border-top:5px;
   text-decoration: #000;
+  float:left;
+  position:bottom;
 }
 
 .comments::after {
@@ -205,6 +201,7 @@ body{
     height:100px;
     
 }
+
 .main-content{
   margin-top:250px;
 }
