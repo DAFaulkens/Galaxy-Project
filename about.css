@@ -1,7 +1,13 @@
 h1 {
     font-family: 'Bree Serif', serif;
+<<<<<<< HEAD
+    padding-bottom: 20px;
+    color: rgb(218, 98, 0);
+    text-decoration: underline;
+=======
     padding-left: 10px;
-    color: rgb(48, 68, 182);
+    color: rgb(218, 98, 0);
+>>>>>>> 7e0271e1164ef3079073081d3de4f730f58bbe83
 }
 .slide {
     margin-top: 10px;
@@ -9,31 +15,48 @@ h1 {
 }
 
 .about {
+<<<<<<< HEAD
     margin: 0 30 0 20;
-    padding-left: 40px;
-    padding-right: 10px;
-    width: 70%;
+    padding: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(./about.img/WhatsApp\ Image\ 2020-06-30\ at\ 9.50.51\ AM\ \(1\).jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+=======
+    margin: 0 30 0 300;
+    padding: 40px;
+    /* width: 70%; */
+    /* align-items: center; */
+    text-align: center;
+    color: white;
 }
 
-img {
+/* img {
     opacity: 60%;
-}
+} */
 
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(168, 155, 135);
+    background-image: url('./about.img/WhatsApp\ Image\ 2020-06-30\ at\ 9.50.51\ AM\ \(1\).jpeg');
+    background-size: cover;
+>>>>>>> 7e0271e1164ef3079073081d3de4f730f58bbe83
 }
 .navbar{
     display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: initial;
-    background-color: black;
-    color: rgb(110, 180, 110);
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, .8);
 }
 .logo{
-    padding-right:36% ;
+    padding-right:32% ;
+    display: flex;
+    flex-direction: row;
 }
 .logo > img{
     height: 100px;
@@ -41,48 +64,250 @@ body{
 }
 .links > ul > li{
     display: inline-block;
-    padding: 20px 30px 20px 30px;
+    padding: 30px 30px 15px 20px;
 }
 .links > ul > li > a{
     text-decoration: none;
-    font-family: sans-serif;
-    color: rgb(110, 180, 110);;
+    color: white;
     transition: .2s;
     font-weight: 500;
     font-size: 20px;
 }
 #active{
-    border: 1px solid black;
+    border: 2px solid white;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .links > ul > li > a:hover{
     border: 1px solid black;
     padding: 15px;
     border-radius: 4px;
     transition: .2s;
-    background-color: rgb(93, 170, 233);;
+    background-color: white;
     color: black;
 }
-.info {
-    background-color: rgb(132, 168, 132);
-    padding-left: 80px;
-    border-top: groove;
-    display: flex;
-    flex: 3;
+#login{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(218, 98, 0);
 }
-.info1 {
-    width: 50%;
-    justify-content: space-between;
-    margin-right: 10px;
-    
+.main-content{
+    margin-top:30px;
+}
+footer{
+position: relative;
+bottom: 0px;
+width:100%;
+background: #111;
+}
+*{
+    margin:0;
+    padding:0;
+    color:whitesmoke;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.main-content{
+    display: flex;
+<<<<<<< HEAD
+
+}
+.main-content .box{
+   flex-basis:50%; 
+   padding: 10px 20px;
+
+}
+.box h2{
+    font-size: 1.125re;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position:relative;
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+.left .content .p{
+    text-align: justify;
+}
+.left .content .social{
+margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding:0 2px;
+}
+.left .content .social a span{
+    height:40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height:40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: #f12020;
+}
+.center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.center .content .fas:hover{
+    background: #f12020;
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone{
+   margin: 10px 0; 
+}
+.right from .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right from .msg{
+    margin-top: 10px;
+}
+.right from input, .right from textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+
+}
+.right from input:focus, 
+.right from textarea:focus{
+   outline-color: #3498db; 
+
+}
+.right from input{
+    height: 35px;
+}
+.right from .btn{
+    margin-top:10px;
+}
+.right from .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+
+}.right from .btn button:hover{
+    background: #000;
+}
+.bottom center{
+ padding:5px;
+ font: size 0.9375rem;
+ background: #151515;
+
+}.bottom center span{
+    color: #656565;
+
 }
 
-/* .info2 {
-    padding-top: 2px;
-    padding-bottom: 2px;
-} */
+.bottom center a{
+    color: #f12020;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+
+}
+@media screen and (max-width:900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .box .content .box{
+        margin: 5px 0;
+    }
+=======
+    /* flex: 2; */
+    justify-content: space-between;
+    
+    width: 100%;
+    
+}
+.info1 {
+    width: 1000px;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+}
 #page {
     font-size: 24px;
     font-weight: bold;
+}
+.info > info1 {
+    background-color: #f1f1f1;
+    width: 10px;
+    margin: 10px;
+    line-height: 75px;
+}
+.footer-icon {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-icon ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+.footer-icon ul li {
+    font-display: inline-block;
+    width: 30px;
+    margin: 0px 20px;
+    border-radius: 100px;
+    background-color: #32cd32;
+
+}
+.footer-icon ul li a {
+    color: #272727;
+    font-size: 20px;
+    display: block;
+    margin: 10px;
+}
+.footer-icon ul li a i {
+    line-height: 30px;
+>>>>>>> 7e0271e1164ef3079073081d3de4f730f58bbe83
 }
