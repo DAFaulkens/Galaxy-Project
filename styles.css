@@ -253,7 +253,7 @@ body{
     width: 100;
     height: 100px;
     display: block;
-    justify-content: center;
+    justify-content: center; 
     align-items: center
 } 
 .wrapper{
@@ -263,7 +263,7 @@ body{
     justify-content: space-evenly;
     margin-top: 50px;
     transition-duration: .3s;
-    
+    overflow: hidden;
 
 }
 .card{

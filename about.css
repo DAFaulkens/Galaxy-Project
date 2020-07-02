@@ -26,6 +26,7 @@ body{
     background-image: url(./about.img/WhatsApp\ Image\ 2020-06-30\ at\ 9.50.51\ AM\ \(1\).jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .navbar{
     display: flex;
