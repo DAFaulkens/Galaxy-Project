@@ -67,59 +67,177 @@ body{
     background-color: rgb(93, 170, 233);;
     color: black;
 }
-.info {
-    background-color: rgb(132, 168, 132);
-    padding-left: 80px;
-    border-top: groove;
+
+.about {
     display: flex;
-    /* flex: 2; */
-    justify-content: space-between;
-    
-    width: 100%;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.info1 {
-    width: 1000px;
-    justify-content: space-between;
-    margin-right: 10px;
-    align-items: center;
+.galaxy {
+    flex-direction: column;
 }
-#page {
-    font-size: 24px;
+h3 {
+    color: rgb(173, 69, 0);
+    font-size: 23px;
     font-weight: bold;
 }
-.info > info1 {
-    background-color: #f1f1f1;
-    width: 10px;
-    margin: 10px;
-    line-height: 75px;
+
+
+*{
+    margin:0;
+    padding:0;
+    color:white;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
-.footer-icon {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-.footer-icon ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-}
-.footer-icon ul li {
-    font-display: inline-block;
-    width: 30px;
-    margin: 0px 20px;
-    border-radius: 100px;
-    background-color: #32cd32;
+.main-content{
+    display: flex;
+    background-color: rgb(32, 30, 30);
 
 }
-.footer-icon ul li a {
-    color: #272727;
-    font-size: 20px;
-    display: block;
-    margin: 10px;
+.main-content .box{
+   flex-basis:50%; 
+   padding: 10px 20px;
+
 }
-.footer-icon ul li a i {
-    line-height: 30px;
+.box h2{
+    font-size: 1.125re;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position:relative;
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+.left .content .p{
+    text-align: justify;
+}
+.left .content .social{
+margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding:0 2px;
+}
+.left .content .social a span{
+    height:40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height:40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: #f12020;
+}
+.center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.center .content .fas:hover{
+    background: #f12020;
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone{
+   margin: 10px 0; 
+}
+.right from .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right from .msg{
+    margin-top: 10px;
+}
+.right from input, .right from textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+
+}
+.right from input:focus, 
+.right from textarea:focus{
+   outline-color: #3498db; 
+
+}
+.right from input{
+    height: 35px;
+}
+.right from .btn{
+    margin-top:10px;
+}
+.right from .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+
+}.right from .btn button:hover{
+    background: #000;
+}
+.bottom center{
+ padding:5px;
+ font: size 0.9375rem;
+ background: #151515;
+
+}.bottom center span{
+    color: #656565;
+
+}
+
+.bottom center a{
+    color: #f12020;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+
+}
+@media screen and (max-width:900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .box .content .box{
+        margin: 5px 0;
+    }
 }
