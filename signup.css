@@ -1,0 +1,97 @@
+body{
+    background-image: url(./images/background9.jpeg);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.signup-box{
+    position: relative;
+    margin: 5% auto;
+    height: 500px;
+    width: 700px;
+    background-color: whitesmoke;
+}
+.details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 350px;
+    height: 500px;
+}
+.input-details{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(109, 11, 11);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    transition: .3s ease;
+}
+.btn{
+    margin-bottom: 20px;
+    width: 120px;
+    height: 40px;
+    font-weight: 500;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: rgb(109, 11, 11);
+    color: whitesmoke;
+    transition: .3s ease;
+}
+.btn:hover{
+    background-color: palevioletred;
+    transition: .3s ease;
+}
+.socials{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    height: 500px;
+    width: 350px;
+    background-image: url(./images/background9.jpeg);
+    transition: .3s;
+}
+.social-media{
+    display: block;
+    margin-bottom: 40px ;
+    height: 50px;
+    width: 275px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    transition: .3s ease;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.social-media:hover{
+    color: black;
+}
+.facebook{
+    background-color: blue;
+}
+.twitter{
+    background-color: rgb(87, 191, 233);
+}
+.google{
+    background-color: rgb(173, 11, 11);
+}
+.socials h1{
+    color: whitesmoke;
+}
