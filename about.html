@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/logo 2.jpeg" alt="Galaxy Company Logo">                   
+            </div>
+            <div class="links">
+                <ul>
+                    <li> <a id="active" href="index.html"> Home </a> </li>
+                    <li> <a href="#about"> About Us</a> </li>
+                    <li> <a href="#houses"> Houses </a> </li>
+                    <li> <a href="#contact"> Contact </a> </li>
+                    <li><a id="login" href="login.html">Login</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <div class="pits">
+        <div class="slide" style="max-width:500px" >
+            <img class="mySlides" src="./about.img/pppppppppp.jpg" height="400px" width="900px">
+            <img class="mySlides" src="./about.img/44.jpeg" height="400px" width="900px">
+            <img class="mySlides" src="./about.img/shutterstock_729856273_RETOUCHED.HL-bg.jpg" height="400px" width="900px">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 7000);
+            }
+            </script>
+            <div class="about">
+                <div class="galaxy">
+                    <h3>Who we are</h3>
+                    <p>Galaxy  Real Estate compay is a  real estate agency. It is an independent company and  an esteemed brand for everything to do with real estate. As an agency, we’re solely focussed on selling, renting and managing real estate properties. Unlike others our focus is always on our clients.</p>
+                    <p>We care about your real estate experience so we guide you on how best to satisfy your needs in a property, and we work hard on how best we can put you into the real estate that achieves your goals for today and tomorrow.</p>
+                    <p>Our focus is on how we can help you explore and find a place you will feel proud to call home, not selling you on the bricks and mortar of a property. For us, it is about pairing your individual requirements that you are seeking in a property with finding the right property in the right place for you, with our team at your side.</p>
+
+                </div>
+                <div class="galaxy">
+                    <h3>What we do</h3>
+                    <p>Galaxy Real Estate team have their fingers on the pulse – they can closely analyse how the market ebbs and flows can be used to help you buy or sell the right property, at the right time. In simple terms, our mission is to help you experience real estate for all its benefits, no matter your age or background.</p>
+                    <p>Our approach to real estate agency is different. We are guides, whose job is to help you every step of the way in the real estate process and simplify your journey to make sure the experience for you is a rewarding one.</p>
+                    <p>We also offer initial consultation when hunting for a property, through to everything to do with finalising the sale or rental transaction.</p>
+                </div>
+                <div class="galaxy">
+                    <h3>Why choose US</h3>
+                    <p>We only list properties that align with our brand, which means we can invest in you in every regard. We pride ourselves on our ability to deliver an exceptional level of service from end to end, eliminating the pressure on you. With our extensive market knowledge and awareness of new trends, established properties and new developments, you can trust us to provide a most premium solution.</p>
+                    <p>Having opened up new opportunities for investors, families and individuals from all demographics, you can trust that Beacon Real Estate are the right choice for you. Secure a consultation with our professionals and start building your future!</p>
+                </div>
+            </div>
+            <footer>
+                <div class="main-content">
+                  <div class="left box">
+                     <h2>About us</h2>
+                     <div class="content">
+                         <p>We are one of the leading 
+                             Real Estate Company of Kenya, established a decade ago to provide 
+                             superior quality
+                             residential and commercial complexes.
+                            We believe in efficient planning and quality  of construction
+                            made just for you.</p>
+                            <div class="social">
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                <a href="#"><span class="fab fa-twitter"></span></a>
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                                <a href="#"><span class="fab fa-youtube"></span></a>
+                                
+                            </div>
+                      </div>
+                   </div> 
+                   <div class="center box">
+                    <h2>Address</h2>  
+                     <div class="content">
+                      <div class="place">
+                          <span class="fas fa-map-market-alt"></span>
+                          <span class="text">Nairobi,Kenya</span>
+                      </div>   
+                      <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+2547 000 987 894</span>
+                    </div>  
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">galaxyreal@gmail.com</span>
+                    </div>  
+                     </div>
+                   </div>
+                   <div class="right box">               
+                     <h2>Contact us</h2>  
+                     <div class="content">
+                       <from action="#">
+                         <div class="email">
+                           <div class="text">Email *</div>
+                           <input type="email" required> 
+                         </div> 
+                         <div class="msg">
+                             <div class="text">Massage *</div>
+                             <textarea cols="25" rows="2" required></textarea>
+                         </div>
+                         <div class="btn">
+                             <button type="submit">Send</button>
+                         </div>
+                       </from>  
+                     </div>
+                   </div>
+                </div>
+                <div class="bottom">
+                    <center>
+                        <span class="credit">Created By<a href="#"> Galaxy Real Estate</a></span>
+                        <span class="far fa-copyright"></span><span> 2020 All rights reserved</span>
+                    </center>
+                </div>
+             </footer> 
+            </div>
+            <script src="myScript.js"></script>
+            </div>   
+    </div>
+ </body>
+</html>
