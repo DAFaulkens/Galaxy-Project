@@ -16,6 +16,10 @@ h1 {
     font-weight: 400;
     font-size: 18px;
 }
+h3 {
+    color: rgb(173, 64, 0);
+    font-size: 24px;
+}
 body{
     padding: 0;
     margin: 0;
