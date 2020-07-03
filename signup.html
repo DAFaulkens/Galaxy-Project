@@ -5,20 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+    <script>
+        const form = document.getElementsById('form')
+        const number = document.getElementsById('number')
+        const email = document.getElementsById('name')
+        const password = document.getElementsById('password')
+        const  password2 = document.getElementsById('password2')
+
+
+        form.addEventListener('submit', (e)=>{
+            let messages = []
+            if(number.value === '' || number.value == null){
+                messages.push('Number Required')
+            }
+        })
+    </script>
     <div class="signup-box">
         <div class="details">
             <h1>Sign Up</h1>
-    
-            <input type="number" name="number" class="input-details" placeholder="Phone Number">
-            <input type="text" name="email" class="input-details" placeholder="Email">
-            <input type="password" name="password" class="input-details" placeholder="Password">
-            <input type="password" name="password" class="input-details" placeholder="Confirm Password">
+            <form class="form" id="form">
+                <input type="number" name="number" class="input-details" id="number" placeholder="Phone Number" required>
+               
+
+                <input type="text" name="email" class="input-details" id="name" placeholder="Email">
+                
+
+                <input type="password" name="password" class="input-details" id="password" placeholder="Password">
+                
+
+                <input type="password" name="password" class="input-details" id="password2" placeholder="Confirm Password">
+                
+            </form>
+
+            
+            
+            
             <p>Signing up means I agree to the terms & conditions</p>
             <input type="submit" name="signup-button" class="btn" value="SIgn Up" href="home.html">
             <p>Have an account? <a href="login.html">Log In</a></p>
         </div>
+
 
         <div class="socials">
             <h1>Sign In With:</h1>

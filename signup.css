@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    justify-content: center;
 }
 .signup-box{
     position: relative;
@@ -12,7 +13,7 @@ body{
     background-color: whitesmoke;
 }
 .details{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     box-sizing: border-box;
@@ -25,8 +26,7 @@ body{
     box-sizing: border-box;
     margin-bottom: 20px;
     padding: 4px;
-    width: 220px;
-    height: 32px;
+    width: 100%;
     border: none;
     outline: none;
     border-bottom: 1px solid rgb(109, 11, 11);
@@ -35,6 +35,16 @@ body{
     font-weight: 300;
     transition: .3s ease;
 }
+/* .form i{
+    position: absolute;
+    top: 125px;
+    right: 2px;
+}
+.form small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
 .btn{
     margin-bottom: 20px;
     width: 120px;
